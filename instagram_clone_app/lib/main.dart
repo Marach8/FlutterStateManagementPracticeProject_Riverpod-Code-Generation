@@ -43,6 +43,7 @@ class MyApp extends StatelessWidget {
             if(isLoading){LoadingScreen().showOverlay(context, 'Loading...');}
             else{LoadingScreen().hideOverlay();}
           });
+          
           final isLoggedIn = ref.watch(isLoggedInProvider);
           if(isLoggedIn){return const MainView();}
           else{return const LoginView();}
