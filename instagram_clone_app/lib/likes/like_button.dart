@@ -23,7 +23,7 @@ class LikeButton extends ConsumerWidget {
           final userId = ref.read(userIdProvider);
           if(userId == null){return;}
           final likeRequest = LikesDislikesRequest(postId: postId, likedBy: userId);
-          ref.read(likeDislikePostProvider(likeRequest));
+          ref.read(likeDislikePostProvider(request: likeRequest));
         }
       ),
       loading: () => const Center(child: CircularProgressIndicator()),
