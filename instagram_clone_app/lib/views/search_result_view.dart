@@ -3,7 +3,6 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:instagram_clone_app/providers/posts_by_search_term_provider.dart';
 import 'package:instagram_clone_app/views/lottie_animation/lottie_subviews.dart';
 import 'package:instagram_clone_app/views/post_sliver_grid_view.dart';
-import 'package:instagram_clone_app/views/thumbnails/post_thumbnail_view.dart';
 
 class SearchResultView extends ConsumerWidget {
   final String searchTerm;
